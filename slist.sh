@@ -426,7 +426,7 @@ fi
 if [[ $help == "true" ]]; then
     help
 elif [[ $edit == "true" ]]; then
-    vi "$config_file"
+    nano "$config_file"
 elif [[ $add_host == "true" ]] && [[ $del_host == "true" ]]; then
     printf "%s\n" "${red}--add-host and --del-host cannot be use at the same time ${end}"
     exit 3
